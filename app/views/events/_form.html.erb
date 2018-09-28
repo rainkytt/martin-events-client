@@ -51,7 +51,12 @@
     <%= form.check_box :featured %>
   </div>
 
+    <div class="field">
+    <%= form.label :categori_id %>
+    <%= form.collection_select(:category_id, Category.all, :id, :name)%>
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-success'%>
   </div>
 <% end %>
