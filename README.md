@@ -25,7 +25,7 @@ Opening the repo root folder:
 ```
 cd martin-events-client
 ```
-Important install (dont' ask why):
+To install needed gem files:
 ```
 bundle install
 ```
@@ -34,27 +34,22 @@ Making database:
 rake db:migrate
 rake db:seed
 ```
-Create sendgrid key : https://sendgrid.com/
+Create sendgrid key: https://sendgrid.com/
 and make Google recaptcha API key: https://www.google.com/recaptcha/admin#list
 ```
 ```
 Create sendgrid.env into project root folder and include:
 ```
-export SENDGRID_API_KEY='YOUR KEY'
-export RECAPTCHA_SITE_KEY='YOUR KEY'
-export RECAPTCHA_SECRET_KEY='YOUR KEY'
-```
-In terminal write:
-```
-echo "sendgrid.env" >> .gitignore
-source ./sendgrid.env
+export SENDGRID_API_KEY='your generated key'
+export RECAPTCHA_SITE_KEY='your generated key'
+export RECAPTCHA_SECRET_KEY='your generated key'
 ```
 Starting rails server to see your result in a browser:
 ```
 source sendgrid.env
 rails s
 ```
-to see result got to: http://localhost:3000/contact/index
+to see result got to: http://localhost:3000/
 ```
 ```
 ## Built With
