@@ -21,11 +21,11 @@ class Payment
   def body
     {
       "amount": 120,
-      "sender_account": Time.now,
-      "recipient_name": "Martin Kangur",
+      "sender_account": "Rain",
+      "recipient_name": "Martin K.",
       "recipient_account": "test2 account",
       "description": Event.first.name,
-      "token": "2899cfab862af6858bb8c2eb174da0fe"
+      "token": "tore token asub siin"
     }
   end
 
