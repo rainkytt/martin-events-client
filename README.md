@@ -35,7 +35,7 @@ rake db:migrate
 rake db:seed
 ```
 Create sendgrid key : https://sendgrid.com/
-and make API key: https://www.google.com/recaptcha/admin#list
+and make Google recaptcha API key: https://www.google.com/recaptcha/admin#list
 ```
 ```
 Create sendgrid.env into project root folder and include:
