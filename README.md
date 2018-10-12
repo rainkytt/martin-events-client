@@ -19,7 +19,7 @@ A step by step series of examples that tell you how to get a development up and 
 
 Cloning git repo:
 ```
-git clone https://github.com/sinivaal/martin-events-client
+git clone https://github.com/rainkytt/martin-events-client
 ```
 Opening the repo root folder:
 ```
@@ -33,9 +33,12 @@ Making database:
 ```
 rake db:migrate
 rake db seed
+```
+Create sendgrid key : https://sendgrid.com/
 Make API key: https://www.google.com/recaptcha/admin#list
 ```
-Create sendgrid.env into root folder and include:
+```
+Create sendgrid.env into project root folder and include:
 ```
 export SENDGRID_API_KEY='YOUR KEY'
 export RECAPTCHA_SITE_KEY='YOUR KEY'
@@ -43,17 +46,17 @@ export RECAPTCHA_SECRET_KEY='YOUR KEY'
 ```
 In terminal write:
 ```
-echo "export SENDGRID_API_KEY='yor api key'" > sendgrid.env
 echo "sendgrid.env" >> .gitignore
-sourche ./sendgrid.env
+source ./sendgrid.env
 ```
 Starting rails server to see your result in a browser:
 ```
 source sendgrid.env
 rails s
+```
 to see result got to: http://localhost:3000/contact/index
 ```
-
+```
 ## Built With
 
 * [Ruby](https://www.ruby-lang.org/en/) - Version 2.5.1p57
