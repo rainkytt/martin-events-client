@@ -36,11 +36,13 @@ rake db seed
 Make API key: https://www.google.com/recaptcha/admin#list
 ```
 Create sendgrid.env into root folder and include:
+```
 export SENDGRID_API_KEY='YOUR KEY'
 export RECAPTCHA_SITE_KEY='YOUR KEY'
 export RECAPTCHA_SECRET_KEY='YOUR KEY'
 ```
 In terminal write:
+```
 echo "export SENDGRID_API_KEY='yor api key'" > sendgrid.env
 echo "sendgrid.env" >> .gitignore
 sourche ./sendgrid.env
