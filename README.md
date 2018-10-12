@@ -32,10 +32,10 @@ bundle install
 Making database:
 ```
 rake db:migrate
-rake db seed
+rake db:seed
 ```
 Create sendgrid key : https://sendgrid.com/
-Make API key: https://www.google.com/recaptcha/admin#list
+and make API key: https://www.google.com/recaptcha/admin#list
 ```
 ```
 Create sendgrid.env into project root folder and include:
