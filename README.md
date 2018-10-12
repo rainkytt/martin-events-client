@@ -32,10 +32,24 @@ bundle install
 Making database:
 ```
 rake db:migrate
+rake db seed
+Make API key: https://www.google.com/recaptcha/admin#list
+```
+Create sendgrid.env into root folder and include:
+export SENDGRID_API_KEY='YOUR KEY'
+export RECAPTCHA_SITE_KEY='YOUR KEY'
+export RECAPTCHA_SECRET_KEY='YOUR KEY'
+```
+In terminal write:
+echo "export SENDGRID_API_KEY='yor api key'" > sendgrid.env
+echo "sendgrid.env" >> .gitignore
+sourche ./sendgrid.env
 ```
 Starting rails server to see your result in a browser:
 ```
+source sendgrid.env
 rails s
+to see result got to: http://localhost:3000/contact/index
 ```
 
 ## Built With
